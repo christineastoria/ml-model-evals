@@ -24,12 +24,19 @@ uv sync
 
 ### Environment Setup
 
-Create a `.env` file or export environment variables:
+Copy `.env.example` to `.env` and fill in your API keys:
 
 ```bash
-export LANGSMITH_API_KEY=your_langsmith_api_key
-export OPENAI_API_KEY=your_openai_api_key
-export TOKENIZERS_PARALLELISM=false  # Suppress HuggingFace warning
+cp .env.example .env
+```
+
+Then edit `.env` with your actual API keys:
+
+```
+OPENAI_API_KEY=your_openai_api_key_here
+LANGSMITH_API_KEY=your_langsmith_api_key_here
+TOKENIZERS_PARALLELISM=false
+LANSMITH_PROJECT=your_langsmith_project
 ```
 
 ### Run
@@ -41,14 +48,6 @@ uv run jupyter lab
 # Open ml_model_evals.ipynb
 ```
 
-## Configuration
-
-| Variable | Description | Required |
-|----------|-------------|----------|
-| `LANGSMITH_API_KEY` | API key for LangSmith evaluations | Yes |
-| `OPENAI_API_KEY` | API key for the LLM powering the agent | Yes |
-| `TOKENIZERS_PARALLELISM` | Set to `false` to suppress tokenizer warnings | No |
-
 ## Additional Notes
 
 - **Use Case**: The notebook uses clinical trial participant feedback analysis as an example, but the pattern applies to any ML model used as an agent tool.
@@ -58,6 +57,7 @@ uv run jupyter lab
 ### Related Resources
 
 - [LangSmith Evaluation Documentation](https://docs.smith.langchain.com/evaluation)
+- [LangSmith Summary Evaluations](https://langchain-5e9cc07a.mintlify.app/langsmith/summary)
 - [LangGraph Documentation](https://langchain-ai.github.io/langgraph/)
 - [OpenEvals Library](https://github.com/langchain-ai/openevals)
 
