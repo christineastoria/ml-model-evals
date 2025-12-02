@@ -1,0 +1,24 @@
+[project]
+name = "ml-model-evals"
+version = "0.1.0"
+description = "Evaluating ML models as agent tools - clinical trial feedback sentiment analysis"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=1.0.1",
+    "langchain-openai>=1.0.1",
+    "langgraph>=1.0.1",
+    "langsmith>=0.4.37",
+    "openevals>=0.1.0",
+    "transformers>=4.40.0",
+    "torch>=2.0.0",
+    "python-dotenv>=1.1.1",
+    "ipykernel>=7.1.0",
+    "jupyterlab>=4.5.0",
+    "jupyter>=1.1.1",
+    "notebook>=7.5.0",
+]
+
+[tool.setuptools]
+packages = []
+
