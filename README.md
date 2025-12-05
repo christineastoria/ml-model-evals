@@ -8,7 +8,7 @@ This example demonstrates how to evaluate traditional ML models (like HuggingFac
 
 ### Prerequisites
 
-- Python 3.9+
+- Python 3.11+
 - [uv](https://docs.astral.sh/uv/) package manager
 - LangSmith account ([sign up](https://smith.langchain.com/))
 - OpenAI API key
