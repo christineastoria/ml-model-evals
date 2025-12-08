@@ -4,6 +4,8 @@
 
 This example demonstrates how to evaluate traditional ML models (like HuggingFace sentiment classifiers) when used as tools within LangGraph agents. It addresses the challenge of layered evaluation—testing the ML model independently, validating tool selection logic, and assessing end-to-end agent responses. The core pattern shows how to combine classification metrics (precision, recall, F1) with LLM-as-judge evaluators using LangSmith.
 
+[MLOps-> LangSmith Slide](https://docs.google.com/presentation/d/1pVv3_0aI4HDk0e9lSxx5_SY_qleMr-wgVn0W6_9wcp4/edit?usp=sharing)
+
 ## Quickstart
 
 ### Prerequisites
